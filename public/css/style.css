@@ -1,0 +1,341 @@
+*{
+			padding:0;
+			margin: 0;
+		}
+		body{
+			font-family: Arial;
+			font-style: italic;
+		}
+		.geral{
+			width: 100%;
+			max-width: 600px;
+			-webkit-box-shadow: 0px 0px 15px 0px rgba(226, 226, 226, 1);
+			-moz-box-shadow:    0px 0px 15px 0px rgba(226, 226, 226, 1);
+			box-shadow:         0px 0px 15px 0px rgba(226, 226, 226, 1);
+			position: absolute;
+			bottom: 0;
+			right: 26px;
+
+		}
+		.container-chat{
+			max-height: 410px;
+			overflow-y: scroll;
+			overflow-x: hidden; 
+			padding: 15px 0 0 15px;
+		}
+		.containerImagemChat{
+			width: 20%;
+		}
+		.containerChatRecrutador ,.containerChatCandidato {
+			width: 80%;
+		}
+		.marginMensagem{
+			margin: 8px 0;
+		}
+		textarea{
+			clear: both;
+			width: 100%;
+			height: 70px;
+			margin:0 auto 15px auto;
+			display: block;
+			max-width: 570px;
+			background-color: #f1f1f1;
+			border: 1px solid #dedede;
+			color: #666666;
+		    font-size: 1em;
+		    padding: 13px 0 0 0;
+		}
+		
+		::-webkit-input-placeholder {
+			padding: 10px 0 0 12px;
+		}
+		:-moz-placeholder{
+			padding: 10px 0 0 12px;	
+		}
+		::-moz-placeholder {
+			padding: 10px 0 0 12px;	
+		}
+		:-ms-input-placeholder {
+			padding: 10px 0 0 12px;				
+		}
+		.center-block{
+			display: block;
+			margin:0 auto;
+		}
+		.text-center{
+			text-align: center;
+		}
+		.text-left{
+			text-align: left;
+		}
+		.text-right{
+			text-align: right;
+		}
+		.text-justify{
+			text-align: justify;
+		}
+		.pull-right{
+			float: right;
+		}
+		.pull-left{
+			float: left;
+		}
+		.clearfix:before, .clearfix:after {
+		    content: "";    
+		    display: table;
+		}
+		.clearfix:after {
+		    clear: both;
+		}
+		span.nomeMensagem{
+			font-size: 14px;
+		}
+		.cemPorCento{
+			width: 100%;
+			display: block;
+		}
+		.header{
+			max-width: 600px;
+			height: 36px;
+			background-color:#005da4;
+		}
+		.header p{
+			padding: 12px 0 0 15px;
+			font-size: 18px;
+			color: #fff;
+		}
+		.resizeJanela,.fecharJanela,.maxiJanela{
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			float: right;
+			z-index: 109;
+			cursor: pointer;
+		}
+		.resizeJanela{
+			background: url('/static/images/imagensChat/resize.png');
+		}
+		.maxiJanela{
+			background: url('/static/images/imagensChat/fullScreen.png');
+		}
+		.fecharJanela{
+			background: url('/static/images/imagensChat/fechar.png');
+			margin: 0 15px;
+		}
+
+		.imagemAvatarChat{
+			width: 92px;
+			height: 92px;
+			background: #ccc;
+		}
+		.containerconversas,.marginDigitado{
+			margin: 8px 0;
+		}
+		.setaBoxRecrutador{background-image: url('/static/images/imagensChat/setaEsquerda.png');
+			position:absolute;
+			top: 8px;
+			left: -7px;
+			display: inline-block;
+			width: 7px;
+			height: 14px;
+		;}
+		.setaBoxCandidato{background-image: url('/static/images/imagensChat/setaDireita.png');
+			position:absolute;
+			top: 8px;
+			right: -7px;
+			display: inline-block;
+			width: 7px;
+			height: 14px;
+		;}
+		.containerChatRecrutador,.containerChatCandidato{
+			position: relative;
+			background-color: #dddddd;
+			max-width: 427px;
+			min-height: 55px;
+		}
+		img{max-width: 100%;}
+		
+		.containerChatRecrutador div,.containerChatCandidato div{
+			max-width: 65%;
+			background-color: #dddddd;
+			padding:12px 0 12px 10px;
+			color: #666666;
+			font-size: 1em;
+			display: inline-block;
+		}
+		.containerChatRecrutador div.arealeft{
+			width: 100%;
+			max-width: 91px;
+		}
+		.containerChatCandidato div.areaRight{
+			width: 100%;
+			max-width: 91px;
+			position: absolute;
+    		bottom: 0;
+		}
+		.divisoria{
+			display:block;
+			background-color: #dcdcdc;
+			width: 100%;
+			height: 1px;
+			margin: 13px 0;
+		}
+		.nomeEmpresa{
+			font-style: italic;
+			font-weight: bolder;
+			font-size: 14px;
+		}
+		.statusDoEnvioTexto{
+			font-size: 0.688em;
+			color: #666666;
+			width: 100%;
+		}
+		.relogioConfirmacao{display: block;width: 100%;}
+		.mensagemEntregue,.mensagemAguardando{
+			display: block;
+			width: 16px;
+			height: 16px;
+			clear: both;
+			margin: 12px 10px;
+		}
+		.mensagemEntregue{background-image: url('/static/images/imagensChat/entregue.png');}
+		.mensagemAguardando{background-image: url('/static/images/imagensChat/aguardando.png');}
+		.containerChatCandidato div.areaRight {
+	    bottom: 0;
+	    right: 16px;
+	}
+	.todasRecrutador{}
+	.todasRecrutado{width:100%;}
+	.containerChatRecrutador, .containerChatCandidato{
+		float: left;
+	}
+	.removeHeight{display: none;}
+	.addHeight{display: block;}
+@media screen and (max-width: 481px)  {
+	.col-100{
+		width: 100%;
+	}
+	.geral{
+		left:50%;
+		margin-left: -160px;
+		max-width: 320px !important;
+	}
+	.container-chat{
+		overflow-x: hidden;
+	}
+	.resizeJanela,.maxiJanela{
+		display: none;
+	}
+	.imagemAvatarChat{
+		width: 60px;
+		height: 60px;
+	}
+	.todasAsMensagens{
+		    max-width: 220px;
+		    float: left;
+	}
+	 .containerconversas  .containerChatCandidato{
+	 	margin: 8px 0 0 0;
+		width: 100%;
+		min-width: 220px;
+	 }
+	.containerconversas  .containerChatRecrutador,{
+		margin:0;
+		max-width: 220px;
+	}
+	.containerChatRecrutador, .containerChatCandidato {
+	    width: 100%;
+	}
+	.containerconversas .containerChatRecrutador div, .containerconversas .containerChatCandidato div{
+		max-width: 100%;
+		clear: both;
+	}
+	.containerChatRecrutador div.arealeft{
+		position: relative;
+		padding: 0;
+	}
+	span.nomeMensagem,span.nomeEmpresa,span.statusDoEnvioTexto{padding-left: 10px}
+	span.nomeRecrutado{margin-left: 0;}
+	span.statusDoEnvioTexto{padding-bottom: 12px;}
+	.recruta{
+		margin-right: 9px;
+	}
+	.cadit{
+		margin-left: 9px;
+	}
+	.containerconversas{
+		width: 100%;
+		max-width: 290px;
+	}
+
+	.containerconversas .containerChatCandidato div{
+		max-width: 100% !important;
+    	background: transparent;
+    	position: relative;
+    	right: 0;
+    	padding: 0;
+	}
+	.containerconversas .containerChatCandidato div{
+		padding: 15px 0 0 8px;
+	}
+	.containerconversas .containerChatCandidato div span{
+		position: relative;
+		padding-left: 0;
+	}
+	.mensagemCandidato{
+		width: 100%;
+	}
+	.containerChatCandidato div.areaRight{padding: 0;}
+	.mensagemEntregue, .mensagemAguardando{
+		position: absolute;
+		bottom: 0;
+	}
+
+}
+@media screen and (min-width: 482px) {
+	.ajuste{
+			padding: 7px !important;
+		}
+}
+@media screen and (min-width: 482px) and (max-width: 1200px){
+	.container-chat {
+    	max-height: 260px;
+    }
+    .containerChatRecrutador div.arealeft{
+		position: absolute;
+		bottom: 0;
+	}
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 1200px) {
+	.geral{
+		max-width: 440px;
+	}
+	.containerChatRecrutador, .containerChatCandidato {
+	    max-width: 300px;
+	}
+	.recruta{
+		margin-right: 9px;
+	}
+	.cadit{
+		margin-left: 9px;
+	}
+	.containerChatCandidato div.areaRight{
+		max-width: 87px;
+		right: 5px;
+	}
+	.todasAsMensagens{
+		/*max-width: 300px;*/
+	}
+
+	
+}
+@media screen and (min-width: 1200px) {
+
+	
+}
